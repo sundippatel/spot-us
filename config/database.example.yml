@@ -1,14 +1,14 @@
 development:
   adapter: mysql
   database: spotus_development
-  host: mysql.sundip.runnable.io
+  host: "<%= ENV['DB_USER']%>"
   username: root
   password:
 
 test:
   adapter: mysql
   database: spotus_test
-  host: mysql.sundip.runnable.io
+  host: "<%= ENV['DB_USER']%>"
   username: root
   password:
 
